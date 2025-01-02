@@ -37,3 +37,45 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-navbar {
+  background-color: rgba(125, 32, 48, 0.9); /* Dark background color with opacity */
+  height: 60px; /* Adjusted height */
+  padding: 0 20px; /* Padding around the navbar */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between brand and nav */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.custom-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  position: absolute; /* Position absolute to layer on top */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to be centered */
+  width: auto; /* Adjust width as needed */
+  z-index: 2; /* Higher z-index to be above custom-navbar */
+  gap: 100px;
+}
+
+.custom-nav:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.custom-link {
+  font-family: 'Arial', sans-serif; /* Pretty font */
+  font-size: 18px; /* Font size */
+  color: white; /* Font color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.custom-link:hover {
+  color: #007bff; /* Change color on hover */
+}

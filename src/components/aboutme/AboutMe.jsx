@@ -7,6 +7,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 
 
 import profileImage from '../../assets/profile.png'; // Ensure this path is correct
+import tables4u from '../../assets/tables4u.png';
 import mhaccImage from '../../assets/MHACC.png';
 import mmumage from '../../assets/mmu.png';
 import flightPath from '../../assets/delta.png';
@@ -20,17 +21,7 @@ const AboutMe = () => {
   return (
     <div style={{ display: 'flex' }} >
       <div className="navbar" style={{ display: 'flex' }}>
-        <Navbar class="flex-column">
-          <Nav className="flex-column">
-            <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
-            <Nav.Link href="#skills" style={{ color: 'white' }}>Skills</Nav.Link>
-            <Nav.Link href="#projects" style={{ color: 'white' }}>Projects</Nav.Link>
-            <Nav.Link href="#experience" style={{ color: 'white' }}>Experience</Nav.Link>
-            <Nav.Link href="#contact" style={{ color: 'white' }}>Contact</Nav.Link>
-          </Nav>
-        </Navbar>
-
-        <div className="resume-container" style={{ padding: '20px', width: '100%' }}>
+        <div className="resume-container" style={{ padding: '40px', width: '100%' }}>
 
           <div className="aboutMe">
             <section id="about">
@@ -54,7 +45,7 @@ const AboutMe = () => {
               <p>
                 You can click to see my
                 <a
-                  href="https://drive.google.com/file/d/1dXMSJiY6vmPBTpN42xj1i7Nh2pG7MzFr/view?usp=sharing"
+                  href="https://drive.google.com/file/d/17OaIo3YRbOtiVftFmXwsss6bKJ4enlEl/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -75,11 +66,73 @@ const AboutMe = () => {
               <p><b>Developer Tools: </b>Linux; MongoDB; Postman; Git; Github Actions; Docker; Firebase; AWS EC2; S3; Agile</p>
             </section>
           </div>
-          
+          <div className="experience">
+            <section id="experience" style={{ padding: '20px 0' }}>
+              <h1 style={{ color: 'crimson', textAlign: 'center', marginBottom: '30px' }}>Experience</h1>
+
+              <div className="experienceContainer" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
+                  <Card.Img variant="top" src={wpi} style={{ height: '100px', objectFit: 'cover' }} />
+                  <br />
+                  <Card.Body>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> Undergraduate Teaching Assistant @ Worcester Polytechnic Institute </b></Card.Title>
+                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
+                      - Provided support for undergraduate courses by holding weekly 3-hour office hours, assisting in lab sections, and grading
+                      approximately 90 homework submissions bi-weekly.
+                      <br /><br />
+                      - Ensured fair and consistent evaluation of student performance.
+                      <br /><br />
+                      - Developed supplementary materials and tutorials to enhance student understanding of course concepts.
+                    </Card.Text>
+                    <br />
+                  </Card.Body>
+                </Card>
+
+                <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
+                  <Card.Img variant="top" src={radicalAI} style={{ height: '80px', objectFit: 'cover' }} />
+
+                  <Card.Body>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> Software Engineer @ Radical AI </b></Card.Title>
+                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
+                      - Increased user engagement by 70% by leveraging React (JavaScript) and Redux to overhaul the chat discussion feature, implementing a more intuitive and responsive user interface.
+                      <br /><br />
+                      - Collaborated closely with AI and Product teams, leveraging Agile Scrum methodologies (including daily stand-ups and sprint planning) to ensure seamless integration and timely deployment of new features.
+                      <br /><br />
+                      - Demonstrated proficiency in Firebase, Vercel, React.js, Node.js, Express.js, Python, and Git for version control.
+                    </Card.Text>
+                    <br />
+                  </Card.Body>
+                </Card>
+              </div>
+            </section>
+          </div>
+
           <div className="projects">
             <section id="projects">
               <h1>Projects</h1>
               <div className="projects-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+
+                <Card className="card-hover" style={{ width: '20rem', height: '35rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
+                  <Card.Img variant="top" src={tables4u} style={{ height: '150px', objectFit: 'cover' }} />
+                  <br />
+                  <Card.Body>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> TABLES4U </b></Card.Title>
+                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
+                      - Collaborated in a team of 4 to create a full-stack restaurant management system, including use case definitions, UML diagrams, and a MySQL database through database mapping, ensuring data integrity and efficient queries.
+                      <br /><br />
+                      - Modeled API architecture with YAML, developed and tested a RESTful API using AWS Lambda and API
+                      Gateway, validated JSON responses with Postman, and applied best practices for error handling and validation.
+                      <br /><br />
+                      - Built a scalable Next.js frontend using Typescript with JWT-based authentication, page-based routing, and
+                      deployed the application via AWS S3, collaborating on UI design using Figma.
+                    </Card.Text>
+                    <br />
+                    <Stack spacing={2} direction="row" justifyContent="center">
+                      <Button variant="contained" href="https://github.com/EricLi3/tables4u">GitHub</Button>
+                      <Button variant="contained" href="https://tables4u.vercel.app/">Website</Button>
+                    </Stack>
+                  </Card.Body>
+                </Card>
 
                 <Card className="card-hover" style={{ width: '20rem', height: '35rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
                   <Card.Img variant="top" src={songProject} style={{ height: '150px', objectFit: 'cover' }} />
@@ -166,54 +219,25 @@ const AboutMe = () => {
               </div>
             </section>
           </div>
-          <div className="experience">
-            <section id="experience" style={{ padding: '20px 0'}}>
-              <h1 style={{ color: 'crimson', textAlign: 'center', marginBottom: '30px' }}>Experience</h1>
-
-              <div className="experienceContainer" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
-                  <Card.Img variant="top" src={wpi} style={{ height: '100px', objectFit: 'cover' }} />
-                  <br />
-                  <Card.Body>
-                    <Card.Title style={{ color: '#D1D5DB' }}><b> Undergraduate Teaching Assistant @ Worcester Polytechnic Institute </b></Card.Title>
-                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
-                      - Provided support for undergraduate courses by holding weekly 3-hour office hours, assisting in lab sections, and grading
-                      approximately 90 homework submissions bi-weekly.
-                      <br /><br />
-                      - Ensured fair and consistent evaluation of student performance.
-                      <br /><br />
-                      - Developed supplementary materials and tutorials to enhance student understanding of course concepts.
-                    </Card.Text>
-                    <br />
-                  </Card.Body>
-                </Card>
-
-                <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
-                  <Card.Img variant="top" src={radicalAI} style={{ height: '80px', objectFit: 'cover' }} />
-
-                  <Card.Body>
-                    <Card.Title style={{ color: '#D1D5DB' }}><b> Software Engineer @ Radical AI </b></Card.Title>
-                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
-                      - Increased user engagement by 70% by leveraging React (JavaScript) and Redux to overhaul the chat discussion feature, implementing a more intuitive and responsive user interface.
-                      <br /><br />
-                      - Collaborated closely with AI and Product teams, leveraging Agile Scrum methodologies (including daily stand-ups and sprint planning) to ensure seamless integration and timely deployment of new features.
-                      <br /><br />
-                      - Demonstrated proficiency in Firebase, Vercel, React.js, Node.js, Express.js, Python, and Git for version control.
-                    </Card.Text>
-                    <br />
-                  </Card.Body>
-                </Card>
-              </div>
-            </section>
-          </div>
 
           <div className="footer">
             <section id="contact">
               <h2 class="title"> Contact Me </h2>
-              <p>Email: <a href="mailto:ekli@wpi.edu">ekli@wpi.edu</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/eric-li-2376a3219/" target="_blank" rel="noopener noreferrer">Eric Li</a></p>
-              <p>GitHub: <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer">EricLi3</a></p>
-              <p>Resume: <a href="https://drive.google.com/file/d/1dXMSJiY6vmPBTpN42xj1i7Nh2pG7MzFr/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a></p>
+
+              <div className="contacts">
+                <a href="mailto:ekli@wpi.edu" target="_blank" rel="noopener noreferrer" className="icon-container email">
+                  <FaEnvelope size={40} />
+                </a>
+                <a href="https://www.linkedin.com/in/eric-k-li" target="_blank" rel="noopener noreferrer" className="icon-container linkedin">
+                  <FaLinkedin size={40} />
+                </a>
+                <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer" className="icon-container github">
+                  <FaGithub size={40} />
+                </a>
+                <a href="https://drive.google.com/file/d/17OaIo3YRbOtiVftFmXwsss6bKJ4enlEl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
+                  <FaFileAlt size={40} />
+                </a>
+              </div>
             </section>
           </div>
         </div>
