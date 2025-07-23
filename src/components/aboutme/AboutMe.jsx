@@ -132,7 +132,7 @@ const AboutMe = () => {
                   <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" style={{ height: '150px', objectFit: 'cover', background: '#fff' }} />
                   <br />
                   <Card.Body>
-                    <Card.Title style={{ color: '#D1D5DB' }}><b> EMERGENCY DATA DASHBOARD </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}>Mar 2025 – May 2025</span></Card.Title>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> EMERGENCY DATA DASHBOARD </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}></span></Card.Title>
                     <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
                       - Led a 4-person team to build a Flask–React dashboard with real-time resident data and alert capabilities, enabling Puerto Rican communities to customize, centralize, and share emergency preparedness guides and resources.
                       <br /><br />
@@ -142,7 +142,8 @@ const AboutMe = () => {
                     </Card.Text>
                     <br />
                     <Stack spacing={2} direction="row" justifyContent="center">
-                      {/* Add links if available */}
+                      <Button variant="contained" href="https://github.com/EricLi3/EmergencyDataDashboard">GitHub</Button>
+                      <Button variant="contained" href="https://github.com/EricLi3/automatingBroadcasts">GitHub</Button>
                     </Stack>
                   </Card.Body>
                 </Card>
