@@ -35,7 +35,7 @@ const LandingPage = () => {
                     <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer" className="icon-container github">
                         <FaGithub size={40} />
                     </a>
-                    <a href="https://drive.google.com/file/d/17OaIo3YRbOtiVftFmXwsss6bKJ4enlEl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
+                    <a href="https://drive.google.com/file/d/1JFIr94rAh55e3Ejy0-m2L6_DnPeRewej/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
                         <FaFileAlt size={40} />
                     </a>
                 </div>
