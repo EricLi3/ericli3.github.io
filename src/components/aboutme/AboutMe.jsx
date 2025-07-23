@@ -45,7 +45,7 @@ const AboutMe = () => {
               <p>
                 You can click to see my
                 <a
-                  href="https://drive.google.com/file/d/17OaIo3YRbOtiVftFmXwsss6bKJ4enlEl/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1JFIr94rAh55e3Ejy0-m2L6_DnPeRewej/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -71,6 +71,23 @@ const AboutMe = () => {
               <h1 style={{ color: 'crimson', textAlign: 'center', marginBottom: '30px' }}>Experience</h1>
 
               <div className="experienceContainer" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+
+                <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
+                  <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Fidelity_Investments_logo_white_on_green.svg" style={{ height: '100px', objectFit: 'contain', background: '#007142' }} />
+                  <br />
+                  <Card.Body>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> Software Engineer Intern @ Fidelity Investments </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}></span></Card.Title>
+                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
+                      - Streamlined app creation-to-deployment with custom NX generators and Nunjucks templates, reducing a 2-day manual process to 5 minutes; led cross-team evaluations of multiple approaches and secured stakeholder buy-in.
+                      <br /><br />
+                      - Led an effort to automate migrating end-to-end tests from Cypress to Playwright for internal applications, improving testing efficiency and reducing flakiness.
+                      <br /><br />
+                      - Initiated research and developed Proofs of Concept for integrating Model Context Protocol into the internal portfolio management tool, delivering key technical documentation and analysis to inform strategic decisions.
+                    </Card.Text>
+                    <br />
+                  </Card.Body>
+                </Card>
+
                 <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
                   <Card.Img variant="top" src={wpi} style={{ height: '100px', objectFit: 'cover' }} />
                   <br />
@@ -111,6 +128,24 @@ const AboutMe = () => {
             <section id="projects">
               <h1>Projects</h1>
               <div className="projects-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Card className="card-hover" style={{ width: '20rem', height: '35rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
+                  <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" style={{ height: '150px', objectFit: 'cover', background: '#fff' }} />
+                  <br />
+                  <Card.Body>
+                    <Card.Title style={{ color: '#D1D5DB' }}><b> EMERGENCY DATA DASHBOARD </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}>Mar 2025 – May 2025</span></Card.Title>
+                    <Card.Text style={{ color: '#9CS3AF', textAlign: 'left' }}>
+                      - Led a 4-person team to build a Flask–React dashboard with real-time resident data and alert capabilities, enabling Puerto Rican communities to customize, centralize, and share emergency preparedness guides and resources.
+                      <br /><br />
+                      - Built a WhatsApp broadcast system reaching 1,000+ residents to automate emergency communications and reduce coordination time, improving overall response efficiency before and after disasters.
+                      <br /><br />
+                      - Delivered the platform to community leaders, along with training and bilingual documentation, ensuring a smooth handoff and paving the way for future AI-driven enhancements.
+                    </Card.Text>
+                    <br />
+                    <Stack spacing={2} direction="row" justifyContent="center">
+                      {/* Add links if available */}
+                    </Stack>
+                  </Card.Body>
+                </Card>
 
                 <Card className="card-hover" style={{ width: '20rem', height: '35rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
                   <Card.Img variant="top" src={tables4u} style={{ height: '150px', objectFit: 'cover' }} />
@@ -234,7 +269,7 @@ const AboutMe = () => {
                 <a href="https://github.com/EricLi3" target="_blank" rel="noopener noreferrer" className="icon-container github">
                   <FaGithub size={40} />
                 </a>
-                <a href="https://drive.google.com/file/d/17OaIo3YRbOtiVftFmXwsss6bKJ4enlEl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
+                <a href="https://drive.google.com/file/d/1JFIr94rAh55e3Ejy0-m2L6_DnPeRewej/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="icon-container resume">
                   <FaFileAlt size={40} />
                 </a>
               </div>
