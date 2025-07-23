@@ -7,6 +7,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 
 
 import profileImage from '../../assets/profile.png'; // Ensure this path is correct
+import dataDashboard from '../../assets/dataDashboard.png';
 import tables4u from '../../assets/tables4u.png';
 import mhaccImage from '../../assets/MHACC.png';
 import mmumage from '../../assets/mmu.png';
@@ -73,7 +74,7 @@ const AboutMe = () => {
               <div className="experienceContainer" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
 
                 <Card className="card-hover" style={{ width: '20rem', height: '23rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
-                  <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Fidelity_Investments_logo_white_on_green.svg" style={{ height: '100px', objectFit: 'contain', background: '#007142' }} />
+                  <Card.Img variant="top" src="https://play-lh.googleusercontent.com/-dOP-JzLHyBgutUvCeYcXH1SAT0yLOMS0t8GS30Z42OohzhAw2Yyf9wQ2j8Aui8Cjdc" style={{ height: '100px', objectFit: 'contain', background: '#007142' }} />
                   <br />
                   <Card.Body>
                     <Card.Title style={{ color: '#D1D5DB' }}><b> Software Engineer Intern @ Fidelity Investments </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}></span></Card.Title>
@@ -129,7 +130,7 @@ const AboutMe = () => {
               <h1>Projects</h1>
               <div className="projects-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <Card className="card-hover" style={{ width: '20rem', height: '35rem', margin: '5px', backgroundColor: 'black', border: '1px solid white' }}>
-                  <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" style={{ height: '150px', objectFit: 'cover', background: '#fff' }} />
+                  <Card.Img variant="top" src={dataDashboard} style={{ height: '150px', objectFit: 'cover', background: '#fff' }} />
                   <br />
                   <Card.Body>
                     <Card.Title style={{ color: '#D1D5DB' }}><b> EMERGENCY DATA DASHBOARD </b> <span style={{ color: '#9CA3AF', fontSize: '0.9em' }}></span></Card.Title>
